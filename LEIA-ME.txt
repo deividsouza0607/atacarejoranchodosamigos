@@ -1,0 +1,20 @@
+ATACAREJO RANCHO DOS AMIGOS — SITE DE UMA PÁGINA
+
+Arquivos:
+- index.html: estrutura do site
+- style.css: cores, layout e responsividade
+- script.js: menu mobile, ano automático e faixa de ofertas
+- assets/logo-atacarejo.png: logo recortada da imagem enviada
+- assets/video-poster.svg: capa provisória da área de vídeo
+
+COMO COLOCAR O VÍDEO DE DRONE
+1. Exporte o vídeo em MP4.
+2. Copie para a pasta assets.
+3. Renomeie para: video-mercado.mp4
+4. Abra index.html no navegador.
+
+ANTES DE PUBLICAR
+- Atualize os produtos e preços ilustrativos na seção de ofertas.
+- Confirme o telefone e os links de Instagram/Facebook no rodapé.
+- O número do WhatsApp foi preenchido com base no número visível no material enviado; confirme se está correto.
+- Para publicar online, envie todos os arquivos mantendo a mesma estrutura de pastas.

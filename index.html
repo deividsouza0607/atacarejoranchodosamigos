@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Atacarejo Rancho dos Amigos — amizade e economia todos os dias. Confira nossas ofertas.">
+  <title>Atacarejo Rancho dos Amigos</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700;800;900&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header class="topbar">
+    <div class="container header-inner">
+      <a class="brand" href="#inicio" aria-label="Atacarejo Rancho dos Amigos - início">
+        <img src="assets/logo-atacarejo.png" alt="Logo Atacarejo Rancho dos Amigos">
+        <span><strong>ATACAREJO</strong><small>RANCHO DOS AMIGOS</small></span>
+      </a>
+      <nav aria-label="Navegação principal">
+        <a href="#video">Conheça a loja</a>
+        <a href="#ofertas">Ofertas</a>
+        <a class="nav-cta" href="#contato">Fale conosco</a>
+      </nav>
+      <button class="menu-toggle" aria-label="Abrir menu" aria-expanded="false">☰</button>
+    </div>
+  </header>
+
+  <main id="inicio">
+    <section class="hero">
+      <div class="hero-shape shape-one"></div><div class="hero-shape shape-two"></div>
+      <div class="container hero-content">
+        <span class="eyebrow"><span class="dot"></span> SÃO JOSÉ DO CERRITO • SC</span>
+        <h1>Amizade e economia<br><em>todos os dias!</em></h1>
+        <p>Seu mercado de confiança, com variedade, atendimento próximo e ofertas para cuidar bem da sua família.</p>
+        <a class="button button-red" href="#ofertas">Confira as ofertas <span>↓</span></a>
+      </div>
+      <div class="hero-stamp">BOM PREÇO<br><b>É AQUI!</b></div>
+    </section>
+
+    <section class="video-section section-pad" id="video">
+      <div class="container">
+        <div class="section-heading">
+          <div><span class="section-kicker">UM OLHAR DE CIMA</span><h2>Conheça o <span>Rancho dos Amigos</span></h2></div>
+          <p>Veja nossa estrutura e encontre seu mercado de todos os dias.</p>
+        </div>
+        <div class="video-frame">
+          <!-- Coloque seu vídeo de drone em assets/video-mercado.mp4 e ele será exibido aqui. -->
+          <video id="market-video" controls playsinline preload="metadata" poster="assets/video-poster.svg">
+            <source src="assets/video-mercado.mp4" type="video/mp4">
+            Seu navegador não suporta vídeo HTML5.
+          </video>
+          <div class="video-placeholder" id="video-placeholder">
+            <div class="play-icon">▶</div>
+            <strong>Seu vídeo aéreo começa aqui</strong>
+            <span>Adicione o arquivo <code>video-mercado.mp4</code> à pasta <code>assets</code>.</span>
+          </div>
+          <div class="video-tag">VISTA AÉREA • DRONE</div>
+        </div>
+      </div>
+    </section>
+
+    <section class="offers-section section-pad" id="ofertas">
+      <div class="container">
+        <div class="offers-title">
+          <div><span class="section-kicker">PREÇO BOM É AQUI</span><h2>Ofertas <span>da semana</span></h2></div>
+          <div class="ticker-controls">
+            <button id="pause-offers" class="round-button" aria-label="Pausar ofertas" title="Pausar ofertas">Ⅱ</button>
+            <span>Deslize para conferir <b>→</b></span>
+          </div>
+        </div>
+      </div>
+      <div class="offer-window" aria-label="Ofertas do mercado">
+        <div class="offer-track" id="offer-track">
+          <article class="offer-card"><span class="offer-label">OFERTA</span><div class="product-emoji">🍚</div><p class="product-name">Arroz 5 kg</p><p class="product-note">Consulte marcas disponíveis</p><div class="price-placeholder">Preço especial</div></article>
+          <article class="offer-card"><span class="offer-label">OFERTA</span><div class="product-emoji">☕</div><p class="product-name">Café</p><p class="product-note">Seu café de todo dia</p><div class="price-placeholder">Preço especial</div></article>
+          <article class="offer-card"><span class="offer-label">OFERTA</span><div class="product-emoji">🥛</div><p class="product-name">Leite</p><p class="product-note">Confira as opções</p><div class="price-placeholder">Preço especial</div></article>
+          <article class="offer-card"><span class="offer-label">OFERTA</span><div class="product-emoji">🍝</div><p class="product-name">Macarrão</p><p class="product-note">Praticidade para sua mesa</p><div class="price-placeholder">Preço especial</div></article>
+          <article class="offer-card"><span class="offer-label">OFERTA</span><div class="product-emoji">🧼</div><p class="product-name">Limpeza</p><p class="product-note">Cuide da casa economizando</p><div class="price-placeholder">Preço especial</div></article>
+          <article class="offer-card"><span class="offer-label">OFERTA</span><div class="product-emoji">🍎</div><p class="product-name">Hortifruti</p><p class="product-note">Mais sabor no seu dia</p><div class="price-placeholder">Preço especial</div></article>
+        </div>
+      </div>
+      <p class="container offer-disclaimer">* Ofertas ilustrativas. Atualize os produtos, preços e validade antes de publicar.</p>
+    </section>
+
+    <section class="visit-section">
+      <div class="container visit-inner">
+        <div><span class="section-kicker">ESPERAMOS POR VOCÊ</span><h2>Economia boa é aquela<br>que fica <span>perto de casa.</span></h2></div>
+        <a class="button button-light" href="#contato">Entre em contato <span>↗</span></a>
+      </div>
+    </section>
+  </main>
+
+  <footer id="contato">
+    <div class="container footer-grid">
+      <div class="footer-brand">
+        <a class="brand brand-footer" href="#inicio">
+          <img src="assets/logo-atacarejo.png" alt="">
+          <span><strong>ATACAREJO</strong><small>RANCHO DOS AMIGOS</small></span>
+        </a>
+        <p>Amizade e economia todos os dias!</p>
+      </div>
+      <div class="footer-col"><h3>Contato</h3><p>São José do Cerrito – SC</p><a href="https://wa.me/5547991636612" target="_blank" rel="noopener">WhatsApp: (47) 99163-6612</a><p class="small-note">Confirme o telefone antes de publicar.</p></div>
+      <div class="footer-col"><h3>Siga nossas redes</h3><a href="https://www.instagram.com/atacarejoranchodosamigos/" target="_blank" rel="noopener">Instagram ↗</a><a href="https://www.facebook.com/" target="_blank" rel="noopener">Facebook ↗</a><a href="https://wa.me/5547991636612" target="_blank" rel="noopener">WhatsApp ↗</a></div>
+    </div>
+    <div class="container footer-bottom"><span>© <span id="year"></span> Atacarejo Rancho dos Amigos</span><span>Feito para valorizar o comércio local.</span></div>
+  </footer>
+  <script src="script.js"></script>
+</body>
+</html>
