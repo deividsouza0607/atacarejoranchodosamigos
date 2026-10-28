@@ -27,15 +27,44 @@
   </header>
 
   <main id="inicio">
-    <section class="hero">
-      <div class="hero-shape shape-one"></div><div class="hero-shape shape-two"></div>
-      <div class="container hero-content">
-        <span class="eyebrow"><span class="dot"></span> SÃO JOSÉ DO CERRITO • SC</span>
-        <h1>Amizade e economia<br><em>todos os dias!</em></h1>
-        <p>Seu mercado de confiança, com variedade, atendimento próximo e ofertas para cuidar bem da sua família.</p>
-        <a class="button button-red" href="#ofertas">Confira as ofertas <span>↓</span></a>
+    <section class="promo-carousel" aria-label="Propagandas e eventos do mercado">
+      <article class="promo-slide promo-slide-active promo-slide-offers" aria-hidden="false">
+        <div class="promo-photo promo-photo-grocery"></div><div class="promo-overlay"></div>
+        <div class="container promo-content">
+          <span class="promo-kicker">ATACAREJO RANCHO DOS AMIGOS</span>
+          <h1>Ofertas especiais<br><em>para economizar!</em></h1>
+          <p>Preço bom, variedade e aquele atendimento amigo que você já conhece.</p>
+          <a class="button button-red" href="#ofertas">Confira as ofertas <span>↓</span></a>
+        </div>
+        <span class="promo-badge">PREÇO BOM<br><b>É AQUI!</b></span>
+      </article>
+      <article class="promo-slide promo-slide-events" aria-hidden="true" hidden>
+        <div class="promo-photo promo-photo-family"></div><div class="promo-overlay"></div>
+        <div class="container promo-content">
+          <span class="promo-kicker">PERTINHO DE VOCÊ</span>
+          <h2>Mais economia<br><em>para sua família.</em></h2>
+          <p>Venha fazer suas compras com a gente e descubra tudo o que preparamos para você.</p>
+          <a class="button button-red" href="#contato">Venha nos visitar <span>↗</span></a>
+        </div>
+        <span class="promo-badge">AMIZADE<br><b>DE VERDADE</b></span>
+      </article>
+      <article class="promo-slide promo-slide-special" aria-hidden="true" hidden>
+        <div class="promo-photo promo-photo-produce"></div><div class="promo-overlay"></div>
+        <div class="container promo-content">
+          <span class="promo-kicker">SABOR E QUALIDADE</span>
+          <h2>Seu dia a dia<br><em>começa aqui!</em></h2>
+          <p>Encontre produtos para abastecer sua casa com praticidade e economia.</p>
+          <a class="button button-red" href="#ofertas">Veja nossos destaques <span>↓</span></a>
+        </div>
+        <span class="promo-badge">RANCHO<br><b>É AMIGO!</b></span>
+      </article>
+      <button class="promo-arrow promo-prev" type="button" aria-label="Propaganda anterior">‹</button>
+      <button class="promo-arrow promo-next" type="button" aria-label="Próxima propaganda">›</button>
+      <div class="promo-dots" aria-label="Escolher propaganda">
+        <button class="promo-dot active" type="button" aria-label="Mostrar ofertas da semana" aria-current="true"></button>
+        <button class="promo-dot" type="button" aria-label="Mostrar divulgação do mercado" aria-current="false"></button>
+        <button class="promo-dot" type="button" aria-label="Mostrar qualidade e variedade" aria-current="false"></button>
       </div>
-      <div class="hero-stamp">BOM PREÇO<br><b>É AQUI!</b></div>
     </section>
 
     <section class="video-section section-pad" id="video">

@@ -39,3 +39,35 @@ const video = document.getElementById('market-video');
 const placeholder = document.getElementById('video-placeholder');
 video.addEventListener('loadeddata', () => placeholder.hidden = true);
 video.addEventListener('error', () => placeholder.hidden = false);
+
+
+// Carrossel de propagandas: troca automática, setas e indicadores.
+const promoSlides = [...document.querySelectorAll('.promo-slide')];
+const promoDots = [...document.querySelectorAll('.promo-dot')];
+const promoCarousel = document.querySelector('.promo-carousel');
+let currentPromo = 0;
+let promoTimer;
+const reducedMotion = window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+function showPromo(index) {
+  currentPromo = (index + promoSlides.length) % promoSlides.length;
+  promoSlides.forEach((slide, i) => {
+    slide.hidden = i !== currentPromo;
+    slide.classList.toggle('promo-slide-active', i === currentPromo);
+    slide.setAttribute('aria-hidden', String(i !== currentPromo));
+  });
+  promoDots.forEach((dot, i) => {
+    dot.classList.toggle('active', i === currentPromo);
+    dot.setAttribute('aria-current', String(i === currentPromo));
+  });
+}
+function startPromoTimer() {
+  clearInterval(promoTimer);
+  if (!reducedMotion) promoTimer = setInterval(() => showPromo(currentPromo + 1), 5000);
+}
+document.querySelector('.promo-prev').addEventListener('click', () => { showPromo(currentPromo - 1); startPromoTimer(); });
+document.querySelector('.promo-next').addEventListener('click', () => { showPromo(currentPromo + 1); startPromoTimer(); });
+promoDots.forEach((dot, i) => dot.addEventListener('click', () => { showPromo(i); startPromoTimer(); }));
+promoCarousel.addEventListener('mouseenter', () => clearInterval(promoTimer));
+promoCarousel.addEventListener('mouseleave', startPromoTimer);
+showPromo(0);
+startPromoTimer();
